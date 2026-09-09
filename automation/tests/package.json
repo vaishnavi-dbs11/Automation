@@ -1,0 +1,26 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "When I want to interact with a web element, such as filling a username field, I first identify the element using the browser's Inspect/DevTools to understand its attributes. \r In Playwright, I can use page.locator() with a CSS selector such as an ID or class. Alternatively, Playwright provides built-in user-facing locators such as getByRole(), getByLabel(), and getByTestId(), which allow me to locate elements without necessarily using a CSS selector.",
+  "main": "example.spec.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:signup": "playwright test signupg.spec.js --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishnavi-dbs11/Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vaishnavi-dbs11/Automation/issues"
+  },
+  "homepage": "https://github.com/vaishnavi-dbs11/Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0"
+  }
+}
