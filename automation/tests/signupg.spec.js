@@ -5,7 +5,7 @@ test('First Playwright test', async ({ page }) => {
     await page.locator('#name').fill('Vaishnavi');
     await page.getByTestId('email-input').fill('gvaarts1501@gmail.com');
     await page.getByRole('checkbox', { name: /I agree/i }).check();
-    await page.getByRole('button', { name: 'Send Code' }).click();
+    //wait page.getByRole('button', { name: 'Send Code' }).click();
     await page.getByAltText('Rahul Shetty Academy').click();
     await page.pause();
 });
