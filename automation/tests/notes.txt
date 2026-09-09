@@ -13,5 +13,6 @@ Your XPath may break because it depended on the DOM structure. Instead: await pa
 // 4. CSS/ID await page.locator('#name').fill('Vaishnavi');
 
 // 5. XPath — when you genuinely need it await page.locator('//button[text()="Continue"]').click();
+6//
 
 Do we use XPath in Playwright? Yes, Playwright supports XPath through locator(). However, I would not prefer XPath as my first choice. I generally use role-based, label-based, test-id, or CSS locators because they are more readable and usually more maintainable. I would use XPath when a suitable stable locator isn't available.
